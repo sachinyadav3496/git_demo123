@@ -2,23 +2,22 @@
 this file contains some custom modules like
     fib
 """
-
-def fib(nterms): 
+def fib(n): 
     """
-    fib(nterms) --> return first n terms of fibonacci series
-    
-    >>>fib(6)
-    0, 1, 1, 2, 3, 5, 
-
+    fib(n) --> returns nth term of fibanacii series
     """
-    start = 0
-    end = 1
-    print(start,end,sep=', ',end=', ')
-    for var in range(nterms-2): 
-        start,end=end,start+end
-        print(end,end=', ')
+    if n == 1 : 
+        return 0
+    elif n == 2 : 
+        return 1
+    else  : 
+        return fib(n-1) + fib(n-2)
 
 if __name__ == "__main__" : 
-
     nterms = int(input("Enter number of terms : "))
-    fib(nterms)
+    c = 1 
+    while c <= nterms : 
+
+        ans  = fib(nterms)
+        print(ans,end=', ',flush=True)
+        c += 1
