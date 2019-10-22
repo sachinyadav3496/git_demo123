@@ -18,6 +18,6 @@ if __name__ == "__main__" :
     c = 1 
     while c <= nterms : 
 
-        ans  = fib(nterms)
+        ans  = fib(c)
         print(ans,end=', ',flush=True)
         c += 1
