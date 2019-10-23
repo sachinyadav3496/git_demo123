@@ -12,6 +12,10 @@ def add(x,y):
     """
     return x + y 
 
+
+def sub(x,y):
+    return x-y
+
 if __name__ == "__main__" : 
     x,y = map(int,input("x,y : ").split(","))
     print(f"x = {x}\ny = {y}\n x + y = {add(x,y)}")
